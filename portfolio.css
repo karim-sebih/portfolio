@@ -10,6 +10,7 @@ header {
   z-index: 1030;
 }
 
+
 main h2 {
   font-size: 36px;
   margin-bottom: 40px;
@@ -61,6 +62,37 @@ nav a {
 nav h2 {
   margin-left: -250px;
 }
+
+
+.links{
+   display: flex;
+  align-items: center;
+  
+}
+
+@media (max-width: 990px) {
+  
+  
+  .links
+
+  {
+  display: none;
+  }
+  
+  
+  }
+  
+  
+  @media (max-width: 599px) {
+  
+  
+  
+   .burger-menu{    left:  2rem;
+      width: unset;
+      
+  }
+  
+  }
 
 #Intro {
   margin-top: 60px;
@@ -190,6 +222,34 @@ input:focus {
 .text-uppercase {
   text-transform: uppercase !important;
 }
+
+textarea.box {
+  
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px; /* espace sous le champ */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  }
+
+
+  /* Spécifique au textarea : */
+textarea.box {
+  /* Largeur identique à l’input */
+   max-width: 90%;
+   
+   max-height:50%;
+   min-width: 80%;
+  
+  /* Hauteur minimum (vous pouvez ajuster) */
+  min-height: 80px; 
+  
+}
+
+
+
 
 .btn {
   display: inline-block;
